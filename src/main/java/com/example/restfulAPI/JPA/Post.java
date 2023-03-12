@@ -14,7 +14,7 @@ public class Post {
     @Column(name = "post_no")  // 컬럼 지정
     private long postSeq;
     @Column(name = "board_no")
-    private String boardNo;
+    private int boardNo;
 
     @Column(name = "post_subject")
     private String subject;
@@ -24,6 +24,11 @@ public class Post {
 
     @Column(name = "member_no")
     private int memberNo;
+
+    @OneToOne
+    @JoinColumn(name= "board")
+    private Board board;
+
 }
 
 
