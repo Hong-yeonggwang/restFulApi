@@ -1,4 +1,4 @@
-package com.example.restfulAPI.JPA;
+package com.example.restfulAPI.JPA.Entity;
 
 
 import lombok.Getter;
@@ -13,7 +13,7 @@ public class Board {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="board_no")
-    private Long boardNo;
+    private Long boardSeq;
 
     @Column(name = "board_name")
     private String name;

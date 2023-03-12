@@ -1,5 +1,6 @@
-package com.example.restfulAPI.JPA;
+package com.example.restfulAPI.JPA.Entity;
 
+import com.example.restfulAPI.JPA.Entity.Board;
 import lombok.Setter;
 import lombok.Getter;
 import javax.persistence.*;
@@ -13,8 +14,6 @@ public class Post {
     @GeneratedValue(strategy = GenerationType.IDENTITY)  // AUTO_INCREMENT 설정 (id값이 null일 경우 자동 생성)
     @Column(name = "post_no")  // 컬럼 지정
     private long postSeq;
-    @Column(name = "board_no")
-    private int boardNo;
 
     @Column(name = "post_subject")
     private String subject;
@@ -22,11 +21,12 @@ public class Post {
     @Column(name = "post_content")
     private String content;
 
-    @Column(name = "member_no")
-    private int memberNo;
+    @ManyToOne
+    @JoinColumn(name = "member_no")
+    private Member member;
 
-    @OneToOne
-    @JoinColumn(name= "board")
+    @ManyToOne
+    @JoinColumn(name= "board_no")
     private Board board;
 
 }

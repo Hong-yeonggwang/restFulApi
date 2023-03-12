@@ -1,4 +1,4 @@
-package com.example.restfulAPI.JPA;
+package com.example.restfulAPI.JPA.Entity;
 
 import lombok.Getter;
 import lombok.Setter;
