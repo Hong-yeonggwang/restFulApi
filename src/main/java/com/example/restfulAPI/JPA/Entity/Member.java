@@ -25,4 +25,11 @@ public class Member {
 
     @Column(name = "mb_rank")
     private int rank;
+    public Member(){}
+    public Member(String id, String password, String name, int rank){
+        this.id = id;
+        this.password = password;
+        this.name = name;
+        this.rank = rank;
+    }
 }

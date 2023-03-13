@@ -1,9 +1,7 @@
 package com.example.restfulAPI.DAO;
 
-import com.example.restfulAPI.JPA.Repository.MemberRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import com.example.restfulAPI.DTO.MemberInfoDTO;
 
 public interface MemberDAO {
-    public void joinMember();
+    public void joinMember(MemberInfoDTO memberInfo);
 }
