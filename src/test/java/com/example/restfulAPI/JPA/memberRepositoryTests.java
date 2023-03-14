@@ -43,7 +43,15 @@ public class memberRepositoryTests extends RestfulApiApplicationTests {  // JpaR
 
         //객체를 하나만 조회할라면 findById를 사용하면된다. 하지만 객체가 빈값일 수있기 때문에 분기 처를 해줘야한다
         //그래서 orElse를 사용하면 편리하다. orElse(null)을하면 빈객체로 초기화한다. 이떄 분기를 처리해줘서 로직의 흐름을 정리해야함.
-        Member member = memberRepository.findById((long)1).orElse(null);
-        System.out.println(member.getName());
+//        Member member = memberRepository.findById((long)1).orElse(null);
+//        System.out.println(member.getName());
+
+        Member member = memberRepository.findBymbId("임백");
+        if(member == null){
+
+        }
+        else{
+            System.out.println(member.getName());
+        }
     }
 }

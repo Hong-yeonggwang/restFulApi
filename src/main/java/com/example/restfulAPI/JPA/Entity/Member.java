@@ -15,10 +15,10 @@ public class Member {
     @Column(name = "member_no")  // 컬럼 지정
     private long memberSeq;
     @Column(name = "mb_id")
-    private String id;
+    private String mbId;
 
     @Column(name = "mb_pwd")
-    private String password;
+    private String mbPassword;
 
     @Column(name = "mb_name")
     private String name;
@@ -27,8 +27,8 @@ public class Member {
     private int rank;
     public Member(){}
     public Member(String id, String password, String name, int rank){
-        this.id = id;
-        this.password = password;
+        this.mbId = id;
+        this.mbPassword = password;
         this.name = name;
         this.rank = rank;
     }

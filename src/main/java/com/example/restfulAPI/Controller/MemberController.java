@@ -1,5 +1,6 @@
 package com.example.restfulAPI.Controller;
 
+import com.example.restfulAPI.DTO.MemberLoginDTO;
 import com.example.restfulAPI.Service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -21,5 +22,9 @@ public class MemberController {
     @PostMapping(value="/join")
     public void joinMember(@RequestBody MemberInfoDTO memberDTO){
         memberService.memberJoin(memberDTO);
+    }
+    @PostMapping(value = "/login")
+    public void loginMember(@RequestBody MemberLoginDTO memberLoginDTO){
+        memberService.memberLogin(memberLoginDTO);
     }
 }

@@ -2,6 +2,7 @@ package com.example.restfulAPI.Service.impl;
 
 import com.example.restfulAPI.DAO.MemberDAO;
 import com.example.restfulAPI.DTO.MemberInfoDTO;
+import com.example.restfulAPI.DTO.MemberLoginDTO;
 import com.example.restfulAPI.Service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,4 +16,9 @@ public class MemberServiceImpl implements MemberService {
     public void memberJoin(MemberInfoDTO member){
         DAO.joinMember(member);
     }
+    @Override
+    public void memberLogin(MemberLoginDTO memberLoginDTO){
+        DAO.loginMember(memberLoginDTO);
+    }
+
 }
