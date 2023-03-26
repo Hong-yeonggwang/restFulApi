@@ -16,6 +16,7 @@ import java.util.stream.Collectors;
 @Table
 @Getter
 @Setter
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class User implements UserDetails {
@@ -52,7 +53,7 @@ public class User implements UserDetails {
     public boolean isAccountNonLocked(){
         return true;
     }
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY) // json으로 반환할떄 아래의 메서드는 반환하지 않는다는뜻. 보안상의 이유로 사용된다.
     @Override
     public boolean isCredentialsNonExpired(){
         return true;
