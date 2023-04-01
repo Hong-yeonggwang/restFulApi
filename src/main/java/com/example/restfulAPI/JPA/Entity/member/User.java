@@ -1,4 +1,4 @@
-package com.example.restfulAPI.JPA.Entity;
+package com.example.restfulAPI.JPA.Entity.member;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;

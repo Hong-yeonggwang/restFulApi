@@ -1,6 +1,6 @@
-package com.example.restfulAPI.JPA.Repository;
+package com.example.restfulAPI.JPA.Repository.member;
 
-import com.example.restfulAPI.JPA.Entity.Board;
+import com.example.restfulAPI.JPA.Entity.member.Board;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

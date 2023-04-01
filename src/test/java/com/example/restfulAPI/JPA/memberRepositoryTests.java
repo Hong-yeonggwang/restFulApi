@@ -1,7 +1,7 @@
 package com.example.restfulAPI.JPA;
 
-import com.example.restfulAPI.JPA.Entity.Member;
-import com.example.restfulAPI.JPA.Repository.MemberRepository;
+import com.example.restfulAPI.JPA.Entity.member.Member;
+import com.example.restfulAPI.JPA.Repository.member.MemberRepository;
 import com.example.restfulAPI.RestfulApiApplicationTests;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

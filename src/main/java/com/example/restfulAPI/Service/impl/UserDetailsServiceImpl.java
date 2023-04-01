@@ -1,6 +1,6 @@
 package com.example.restfulAPI.Service.impl;
 
-import com.example.restfulAPI.JPA.Repository.UserRepository;
+import com.example.restfulAPI.JPA.Repository.member.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

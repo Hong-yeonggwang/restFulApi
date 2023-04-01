@@ -1,6 +1,5 @@
-package com.example.restfulAPI.JPA.Entity;
+package com.example.restfulAPI.JPA.Entity.member;
 
-import com.example.restfulAPI.JPA.Entity.Board;
 import lombok.Setter;
 import lombok.Getter;
 import javax.persistence.*;
