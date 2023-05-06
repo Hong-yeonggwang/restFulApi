@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Entity
-public class location {
+public class Location {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="LOCATIONSEQ")
@@ -25,7 +25,6 @@ public class location {
     private LocalDateTime locationTime;
 
     @ManyToOne
-    @JoinColumn(name = "DEVICESEQ")
     private Device deviceSeq;
 
     @ManyToOne

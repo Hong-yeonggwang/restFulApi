@@ -15,6 +15,9 @@ public class BusStop {
     @Column(name="BUSSTOPSEQ")
     private Long busStopSeq;
 
+    @Column(name = "BUSSTOP")
+    private String busStop;
+
     @Column(name = "ATITUDE")
     private String atitude;
 

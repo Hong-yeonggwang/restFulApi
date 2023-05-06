@@ -1,4 +1,4 @@
-package com.example.restfulAPI.JPA;
+package com.example.restfulAPI.JPA.member;
 
 import com.example.restfulAPI.JPA.Entity.member.Member;
 import com.example.restfulAPI.JPA.Repository.member.MemberRepository;
@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-@Repository
 public class memberRepositoryTests extends RestfulApiApplicationTests {  // JpaRepository를 상속하여 사용. <객체, ID>
 //    @Autowired
 //    private PostRepository postRepository;

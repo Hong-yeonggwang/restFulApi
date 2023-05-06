@@ -32,4 +32,6 @@ public class Member {
         this.name = name;
         this.rank = rank;
     }
+
+
 }
